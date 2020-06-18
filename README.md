@@ -24,6 +24,16 @@ k = 0.0181 is the recovery rate (Yu, 2020). WHO is an official website of the Wo
 
 v = the number of vaccinated people per day (for the code, I have tried out several values)
 
+
+INFERENCE:
+
+CONTACTS PER DAY: If we limit the interactions of infected people to 1 (put full quarantine), then the proportion of infected people goes to 0.25. If we put it to 5 people per day, then the peak of infected people is at day 60 with approximately 70% of the people infected. If we leave it 13.4 - the normal daily interaction, then apr. 85% of the population will be infected peaking on the 20th day. The contact rate is not adjusted to specific interaction of Chinese people, therefore, the numbers should be approached with doubts. This simulation represents the overall trends of the virus and implies that only full quarantine can prevent a massive spread of the virus.
+
+VACCINATION: The levels of vaccination do not significantly influence the epidemy flow unless we vaccinate almost all the people right away. Even if we proceed with 10,000 a day, the changes of proportion of infected are not visual on graph, but it decreases numerically slightly. Therefore, only total vaccination can help prevent the spread of the disease, but for the further considerations to avoid the repetition of the pandemic, people should be vaccinated.
+
+
+
+-----------------------------------------------------------
 Citation: Coronavirus disease 2019 (COVID-19) Situation Report – 45.World Health Organizations. March 6th, 2020. Retrieved from https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200305-sitrep-45-covid-19.pdf?sfvrsn=ed2ba78b_2
 
 Worldometers.info.March 6th, 2020. Retrieved from https://www.worldometers.info/coronavirus/#countries
