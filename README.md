@@ -1,14 +1,16 @@
-# Coronavirus-Infection-Prediction
-
 import numpy as np
+
 t_initial = 0 #the current time
+
 t_end = 200 #the end time of the simulation, number of days the simulation accounts for  
 
-h = 0.1 # setting up the step size to use the Euler's method, the smaller the value, the more precise the solution to the differential equation will be
+h = 0.1 # setting up the step size to use the Euler's method, the smaller the value, the more precise the solution
+       # to the differential equation will be
 steps = int((t_end - t_initial)/h + 1) # calculating the number of steps
 
-Setting up the coefficients in the SIR model
-t = np.linspace(t_initial, t_end, steps) # creating a list of equal distributed storing t values 
+ #Setting up the coefficients for the SIR model 
+ 
+t = np.linspace(t_initial, t_end, steps) # creating a list of equal distributed storing t values
 S = np.zeros(steps) # creating the list with zero values for storing S values
 I = np.zeros(steps) # creating the list with zero values for storing I values
 R = np.zeros(steps) # creating the list with zero values for storing R values
@@ -20,7 +22,7 @@ k = 0.0181   # setting up the k coefficient  - recovery rate, defined and justif
 T = 14 #days is the delay after which the person becomes susceptible again
 
 
-# Assigning the current conditions of the susceptible and infected people
+# Assigning the current conditions of the susceptible and infected people 
 N = 1428230000 #calculating the population size
 S[0] = 1428095506/N
 I[0] = 80565/N
