@@ -28,7 +28,7 @@ k = 0.0181 is the recovery rate (Yu, 2020). WHO is an official website of the Wo
 v = the number of vaccinated people per day (for the code, I have tried out several values)
 
 
-![Screenshot](Full Quarantine.01.30 PM.png)
+![Screenshot](FullQuarantine.01.30PM.png)
 
 ![Screenshot](Moderate.png)
 
