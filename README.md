@@ -1,6 +1,9 @@
+# CoronaVirus Infection Prediction
+
 For this simulation, I am exploring the potential infection rates of the population based on interaction rates among the people and vacciantion on March 5th, 2020.
 
 The symptoms of the virus are difficulty in breathing, fever, and cough. On March 5th, there are 95,333 cases of infection confirmed and 3282 deaths, resulting in 3282/95,333= 3.4% lethality rate (WHO, 2020). I will explore the case for China, where there are 80 565 confirmed cases and 3015 deaths on March 5th (WHO, 2020). The SIR model includes three differential equations:
+
 𝑑𝑆𝑑𝑡=−𝑏𝑐𝑆(𝑡)𝐼(𝑡)−𝑣
  
 𝑑𝐼𝑑𝑡=(𝑏𝑐𝑆(𝑡)−𝑘)𝐼(𝑡)
@@ -25,11 +28,19 @@ k = 0.0181 is the recovery rate (Yu, 2020). WHO is an official website of the Wo
 v = the number of vaccinated people per day (for the code, I have tried out several values)
 
 
-INFERENCE:
+![Screenshot](Full Quarantine.01.30 PM.png)
 
-CONTACTS PER DAY: If we limit the interactions of infected people to 1 (put full quarantine), then the proportion of infected people goes to 0.25. If we put it to 5 people per day, then the peak of infected people is at day 60 with approximately 70% of the people infected. If we leave it 13.4 - the normal daily interaction, then apr. 85% of the population will be infected peaking on the 20th day. The contact rate is not adjusted to specific interaction of Chinese people, therefore, the numbers should be approached with doubts. This simulation represents the overall trends of the virus and implies that only full quarantine can prevent a massive spread of the virus.
+![Screenshot](Moderate.png)
 
-VACCINATION: The levels of vaccination do not significantly influence the epidemy flow unless we vaccinate almost all the people right away. Even if we proceed with 10,000 a day, the changes of proportion of infected are not visual on graph, but it decreases numerically slightly. Therefore, only total vaccination can help prevent the spread of the disease, but for the further considerations to avoid the repetition of the pandemic, people should be vaccinated.
+## INFERENCE:
+
+### CONTACTS PER DAY:
+
+If we limit the interactions of infected people to 1 (put full quarantine), then the proportion of infected people goes to 0.25. If we put it to 5 people per day, then the peak of infected people is at day 60 with approximately 70% of the people infected. If we leave it 13.4 - the normal daily interaction, then apr. 85% of the population will be infected peaking on the 20th day. The contact rate is not adjusted to specific interaction of Chinese people, therefore, the numbers should be approached with doubts. This simulation represents the overall trends of the virus and implies that only full quarantine can prevent a massive spread of the virus.
+
+### VACCINATION: 
+
+The levels of vaccination do not significantly influence the epidemy flow unless we vaccinate almost all the people right away. Even if we proceed with 10,000 a day, the changes of proportion of infected are not visual on graph, but it decreases numerically slightly. Therefore, only total vaccination can help prevent the spread of the disease, but for the further considerations to avoid the repetition of the pandemic, people should be vaccinated.
 
 
 
